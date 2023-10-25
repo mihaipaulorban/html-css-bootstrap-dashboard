@@ -1,3 +1,5 @@
+/* NAV */
+
 .back-gray {
     background-color: #f8f9fa;
 }
@@ -15,6 +17,113 @@
     box-shadow: none;
 }
 
+.header-nav{
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+}
+
 .logo {
     width: 50px;
+}
+
+/* SIDEBAR  */
+
+.sidebar {
+    flex-shrink: 0;
+    width: 150px;
+    height: calc( 100vh - 68px );
+    background-color: #051e34;
+    background-image: url(img/sidebar-bg.png);
+    overflow: hidden;
+}
+
+.height-100{
+    height: 100%
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: calc(100% - 68px );
+}
+
+.main-container{
+    width: calc(100% - 150px);
+    height: calc(100vh - 68px);
+    overflow-y: auto;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    background-color: rgb(244, 244, 244);
+
+}
+
+.fa-angles-right {
+    color: white;
+}
+
+.blue-back{
+    background-color: #1b72e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.color_badge{
+    background-color:#165bba
+}
+
+.pad {
+    padding: 3px 9px;
+}
+
+.fa-pen,
+.fa-trash {
+    font-size: 12px;
+}
+
+
+.classes{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.classes .class-icon{
+    width: 20px;
+}
+
+.name-width{
+    width: 50%;
+}
+
+.faq{
+    width: 100%;
+}
+
+.todo{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.activity{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:767px){
+
+    .sidebar{
+        width: 70px;
+    }
+
+    .main-container{
+        width: calc(100% - 70px);
+
+    }
+    
 }
