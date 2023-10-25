@@ -1,0 +1,20 @@
+.back-gray {
+    background-color: #f8f9fa;
+}
+
+.t-gray {
+    color: #777777;
+}
+
+.border-dark-gray {
+    background-color: #e5e5e5;
+}
+
+.border-dark-gray:focus {
+    background-color: #e5e5e5;
+    box-shadow: none;
+}
+
+.logo {
+    width: 50px;
+}
